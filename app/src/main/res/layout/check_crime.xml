@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/window_background">
+    <TextView
+        android:id="@+id/ActivityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_title"
+        android:textColor="@color/orange_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:textFontWeight="700"/>
+    <TextView
+        android:id="@+id/CrimeTypes"
+        android:background="@drawable/rounded_corners"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ActivityText"
+        android:layout_marginTop="95dp"
+        android:textColor="@color/grey_500"/>
+
+    <TextView
+        android:id="@+id/DateTime"
+        android:layout_width="250dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CrimeTypes"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/grey_500"/>
+    <TextView
+        android:id="@+id/CrimeDef"
+        android:layout_width="250dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateTime"
+        android:layout_marginTop="50dp"
+        android:maxLength="200"
+        android:hint="Define what happens"
+        android:gravity="top"
+        android:textColorHint="@color/grey_300"
+        android:textColor="@color/grey_500"/>
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CrimeDef" />
+</androidx.constraintlayout.widget.ConstraintLayout>

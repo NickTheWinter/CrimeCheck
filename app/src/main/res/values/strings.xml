@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Crime Check</string>
+    <string-array name="crime_types_array">
+        <item>Ограбление</item>
+        <item>Нападение</item>
+        <item>Пожар</item>
+        <item>ДТП</item>
+        <item>Другое</item>
+    </string-array>
+    <string name="add_title">Сообщить о преступлении</string>
+    <string name="check_title">Преступление</string>
+</resources>
